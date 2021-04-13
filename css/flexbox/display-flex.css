@@ -1,0 +1,10 @@
+.displayFlex {
+    /* border: 1px solid red; */
+    display: flex;
+    
+}
+
+.displayFlex .box + .box {
+    margin-inline-start: 10rem;
+}
+
