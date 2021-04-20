@@ -5,89 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/proyecto/index.css" />
-    <title>Document</title>
+    <!-- Empieza favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/fav-icon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/fav-icon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/fav-icon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/fav-icon/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/fav-icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/fav-icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/fav-icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/fav-icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/fav-icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/fav-icon/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav-icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/fav-icon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav-icon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/fav-icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Termina favicon -->
+
+    <meta property="og:title" content="Sistema de Spotifu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://spotifu.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://spotifu.vercel.app/static/media/splash.e91c8659.png"
+    />
+    <meta
+      property="og:description"
+      content="Aplicación demo para escuchar música."
+    />
+    <title>Spotifu</title>
   </head>
   <body class="body">
-    <header class="logo" role="banner">
-      <a href="/" aria-current="page">
-        <img
-          class="logo-image"
-          src="./assets/images/spotifu-logo.png"
-          width="112"
-          height="32"
-          alt="logo spotifu-logo"
-        />
-      </a>
-    </header>
-    <nav class="menu" aria-label="Principal">
-      <ul class="menu-list">
-        <li class="menuItem is-active">
-          <a href="/" class="link" aria-current="page"
-            ><i class="icon-home" aria-hidden="true"></i><span>Inicio</span></a
-          >
-        </li>
-        <li class="menuItem ">
-          <a href="/" class="link" aria-current="page"
-            ><i class="icon-search" aria-hidden="true"></i><span>Buscar</span></a
-          >
-        </li>
-        <li class="menuItem ">
-          <a href="/" class="link" aria-current="page"
-            ><i class="icon-credit-card" aria-hidden="true"></i><span>Premium</span></a
-          >
-        </li>
-        
-      </ul>
-    </nav>
-    <nav aria-labelledby="library-navigation" class="list">
-      <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
-      <ul class="list--content">
-        <li class="list-item">
-          <a href="#" class="link">Creada para ti</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Escuchado recientemente</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Tus Me Gusta</a>
-        </li>
-      </ul>
-    </nav>
-    <nav aria-labelledby="playlist-navigation" class="list">
-      <h2 class="list-title" id="playlist-navigation">Playlist</h2>
-      <ul class="list--content">
-        <li class="list-item">
-          <a href="#" class="link">Lo mejor de los mejor</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Naruto al 100% para progr…</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Para cantar en la ducha</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Sin parar</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Naruto openings</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Boku no pico</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">This is Pokémon</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Más populares de la semana</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Mis pistas de shazam</a>
-        </li>
-        <li class="list-item">
-          <a href="#" class="link">Audio Library</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="sidebar">
+      <header class="logo" role="banner">
+        <a href="/" aria-current="page">
+          <img
+            class="logo-image"
+            src="./assets/images/spotifu-logo.png"
+            width="112"
+            height="32"
+            alt="logo spotifu-logo"
+          />
+        </a>
+      </header>
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu-list">
+          <li class="menuItem is-active">
+            <a href="/" class="link" aria-current="page"
+              ><i class="icon-home" aria-hidden="true"></i
+              ><span>Inicio</span></a
+            >
+          </li>
+          <li class="menuItem">
+            <a href="/" class="link" aria-current="page"
+              ><i class="icon-search" aria-hidden="true"></i
+              ><span>Buscar</span></a
+            >
+          </li>
+          <li class="menuItem">
+            <a href="/" class="link" aria-current="page"
+              ><i class="icon-credit-card" aria-hidden="true"></i
+              ><span>Premium</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="library-navigation" class="list">
+        <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+        <ul class="list--content">
+          <li class="list-item">
+            <a href="#" class="link">Creada para ti</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Escuchado recientemente</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Tus Me Gusta</a>
+          </li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="playlist-navigation" class="list">
+        <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+        <div class="ellipsis">
+          <ul class="list--content">
+            <li class="list-item">
+              <a href="#" class="link">Lo mejor de los mejor</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Naruto al 100% para progr…</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Para cantar en la ducha</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Sin parar</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Naruto openings</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Boku no pico</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">This is Pokémon</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link"
+                >Más populares de la semana para ti que eres un pro</a
+              >
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Mis pistas de shazam</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Audio Library</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Amor y otras</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Latin</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Pokemon</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Para cantar</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link">Yui</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <button
       class="buttonIcon is-white"
       aria-label="Reproducir"

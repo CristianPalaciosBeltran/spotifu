@@ -1,0 +1,10 @@
+.ellipsis {
+ overflow: hidden;
+}
+
+.ellipsis li > * {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
