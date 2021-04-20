@@ -7,13 +7,100 @@
     <link rel="stylesheet" href="./css/proyecto/index.css" />
     <title>Document</title>
   </head>
-  <body class='body'>
-      <a href="" class="link">clic aquí</a>
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloribus
-      dolore, tempora magni itaque possimus. Natus, aut ab! Ipsum quasi esse
-      obcaecati, fugiat error assumenda voluptatibus provident possimus eius?
-    </div>
-    <i class="icon-clock"></i>
+  <body class="body">
+    <header class="logo" role="banner">
+      <a href="/" aria-current="page">
+        <img
+          class="logo-image"
+          src="./assets/images/spotifu-logo.png"
+          width="112"
+          height="32"
+          alt="logo spotifu-logo"
+        />
+      </a>
+    </header>
+    <nav class="menu" aria-label="Principal">
+      <ul class="menu-list">
+        <li class="menuItem is-active">
+          <a href="/" class="link" aria-current="page"
+            ><i class="icon-home" aria-hidden="true"></i><span>Inicio</span></a
+          >
+        </li>
+        <li class="menuItem ">
+          <a href="/" class="link" aria-current="page"
+            ><i class="icon-search" aria-hidden="true"></i><span>Buscar</span></a
+          >
+        </li>
+        <li class="menuItem ">
+          <a href="/" class="link" aria-current="page"
+            ><i class="icon-credit-card" aria-hidden="true"></i><span>Premium</span></a
+          >
+        </li>
+        
+      </ul>
+    </nav>
+    <nav aria-labelledby="library-navigation" class="list">
+      <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+      <ul class="list--content">
+        <li class="list-item">
+          <a href="#" class="link">Creada para ti</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Escuchado recientemente</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Tus Me Gusta</a>
+        </li>
+      </ul>
+    </nav>
+    <nav aria-labelledby="playlist-navigation" class="list">
+      <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+      <ul class="list--content">
+        <li class="list-item">
+          <a href="#" class="link">Lo mejor de los mejor</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Naruto al 100% para progr…</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Para cantar en la ducha</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Sin parar</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Naruto openings</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Boku no pico</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">This is Pokémon</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Más populares de la semana</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Mis pistas de shazam</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Audio Library</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="buttonIcon is-white"
+      aria-label="Reproducir"
+      title="reproducir"
+    >
+      <i class="icon-play" aria-hidden="true"></i>
+    </button>
+    <button
+      class="buttonIcon is-primary"
+      aria-label="Reproducir"
+      title="reproducir"
+    >
+      <i class="icon-play" aria-hidden="true"></i>
+    </button>
   </body>
 </html>
