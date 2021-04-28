@@ -6,10 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/proyecto/index.css" />
     <!-- Empieza favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/fav-icon/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/fav-icon/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/fav-icon/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/fav-icon/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/fav-icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/fav-icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/fav-icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/fav-icon/apple-icon-76x76.png"
+    />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
@@ -41,9 +57,24 @@
       sizes="192x192"
       href="./assets/fav-icon/android-icon-192x192.png"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav-icon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/fav-icon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/fav-icon/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/fav-icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/fav-icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/fav-icon/favicon-16x16.png"
+    />
     <link rel="manifest" href="./assets/fav-icon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -64,6 +95,7 @@
     <title>Spotifu</title>
   </head>
   <body class="body">
+    
     <div class="sidebar">
       <header class="logo" role="banner">
         <a href="/" aria-current="page">
@@ -167,19 +199,106 @@
         </div>
       </nav>
     </div>
-    <button
-      class="buttonIcon is-white"
-      aria-label="Reproducir"
-      title="reproducir"
-    >
-      <i class="icon-play" aria-hidden="true"></i>
-    </button>
-    <button
-      class="buttonIcon is-primary"
-      aria-label="Reproducir"
-      title="reproducir"
-    >
-      <i class="icon-play" aria-hidden="true"></i>
-    </button>
+    <div class="player">
+      <div class="player-nowPlaying">
+        <div class="nowPlaying">
+          <div class="nowPlaying-cover">
+            <img
+              width="56"
+              height="56"
+              src="./images/MiniCover.png"
+              alt="Portada de Grand Escape"
+              title="Portada de Grand Escape"
+            />
+          </div>
+          <div class="nowPlaying-details">
+            <div class="nowPlaying-description">
+              <a href="#song" class="nowPlaying-title"
+                >Grand Escape (feat. Tokio Miura)</a
+              >
+              <a href="#RADWIMPS" class="nowPlaying-artist"
+                >RADWIMPS, Toko Miura</a
+              >
+            </div>
+            <div class="nowPlaying-actions">
+              <button
+                class="player-control"
+                role="switch"
+                aria-label="Guardar en tu biblioteca"
+                title="Guardar en tu biblioteca"
+              >
+                <i class="icon-heart" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="player-playerControls">
+        <div class="playerControls">
+          <div
+            class="playerControls-buttons"
+            aria-label="Controles de reproducción"
+          >
+            <button class="buttonIcon" aria-label="Anterior" title="Anterior">
+              <i class="icon-prev" aria-hidden="true"></i>
+            </button>
+            <button
+              class="buttonIcon is-white"
+              aria-label="Reproducir"
+              title="reproducir"
+            >
+              <i class="icon-play" aria-hidden="true"></i>
+            </button>
+            <button
+              class="buttonIcon"
+              aria-label="Siguiente"
+              title="Siguiente"
+            >
+              <i class="icon-next" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="playerPlayBack">
+            <span class="playerPlayBack-progressTime">01: 40</span>
+            <div class="playerPlayBack-slider">
+              <div class="slider">
+                <div class="slider-progress">
+                  <button
+                    class="slider-button"
+                    aria-label="Controlar el porgreso de la reproducción"
+                  ></button>
+                </div>
+              </div>
+            </div>
+            <span class="playerPlayBack-progressTime">01: 40</span>
+          </div>
+        </div>
+      </div>
+      <div class="player-playerVolumen">
+        <div class="playerVolumen">
+          <button
+            class="player-control"
+            aria-label="Silenciar"
+            aria-describedby="volumen-icon"
+          >
+            <i
+              id="volumen-icon"
+              class="icon-volume-up"
+              role="presentation"
+              aria-label="Volumen alto"
+            ></i>
+          </button>
+          <div class="playerVolumen-slider">
+            <div class="slider">
+              <div class="slider-progress">
+                <button
+                  class="slider-button"
+                  aria-label="Controlar el porgreso de la reproducción"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
