@@ -6,7 +6,8 @@
 @import "./sidebar.css";
 @import "./ellipsis.css";
 @import "./player.css";
-@import "./playlist-a.css";
+@import "./page.css";
+@import "./layout.css";
 
 
 :root {
@@ -32,4 +33,13 @@ body {
   background-color: var(--primary);
   font-weight: normal;
   font-style: normal;
+}
+
+
+.sticky {
+  position: sticky;
+  top: 0; 
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  left:-2rem;
 }
