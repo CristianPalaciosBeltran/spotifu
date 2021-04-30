@@ -8,9 +8,11 @@
 @import "./player.css";
 @import "./page.css";
 @import "./layout.css";
+@import "./scrollbar.css";
 
 
 :root {
+  font-size: 10px;
   --primary: #00b050;
   --white: #ffffff;
   --gray10: #b3b3b3;
@@ -42,4 +44,15 @@ body {
   z-index: 1;
   backdrop-filter: blur(5px);
   left:-2rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1367px) {
+  :root {
+    font-size: 18px;
+  }
 }

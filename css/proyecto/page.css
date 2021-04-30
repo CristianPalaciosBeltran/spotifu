@@ -5,7 +5,7 @@
 @import "./header.css";
 
 .page {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-inline-start: 2em;
   padding-inline-start: 2em;
   padding-block-end: 2em;
@@ -19,7 +19,7 @@
 
 .page .header {
     margin-block-end: 1rem;
-    margin-inline-end: -2rem;
+    margin-inline-end: -1rem;
     margin-inline-start: -1rem;
 }
 

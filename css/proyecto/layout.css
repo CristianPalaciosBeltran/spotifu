@@ -2,7 +2,7 @@
   --sidebarInlineSize: 13.5rem;
   --minBlockSize: 37.5rem;
   --minInlineSize: 48rem;
-  --bottomSize: 10.22rem;
+  --bottomSize: 6.1rem;
 }
 
 .layout {
@@ -18,12 +18,14 @@
   overflow: auto;
   overflow-x: hidden;
   flex-shrink: 0;
+  background: var(--gray60);
 }
 
 .layout-main {
   block-size: calc(100vh - var(--bottomSize));
   min-block-size: var(--minBlockSize);
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .layout-bottom{
